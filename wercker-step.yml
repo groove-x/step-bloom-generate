@@ -1,5 +1,5 @@
 name: bloom-generate
-version: 0.0.8
+version: 0.0.9
 description: generate debian package for ROS package
 properties:
   os_name:
@@ -13,4 +13,8 @@ properties:
   ros_distro:
     type: string
     default: kinetic
+    required: false
+  project_root:
+    type: string
+    default: $WERCKER_ROOT
     required: false
